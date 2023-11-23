@@ -25,6 +25,7 @@ package teamcode;
 import android.os.Environment;
 
 import com.qualcomm.hardware.rev.RevHubOrientationOnRobot;
+import com.qualcomm.robotcore.hardware.DcMotor;
 
 import org.openftc.easyopencv.OpenCvCameraRotation;
 
@@ -73,9 +74,9 @@ public class RobotParams
 
     public static final String ROBOT_NAME                       = "Robotxxxx";
     public static final RevHubOrientationOnRobot.LogoFacingDirection hubLogoDirection =
-        RevHubOrientationOnRobot.LogoFacingDirection.UP;
+        RevHubOrientationOnRobot.LogoFacingDirection.LEFT;
     public static final RevHubOrientationOnRobot.UsbFacingDirection hubUsbDirection =
-        RevHubOrientationOnRobot.UsbFacingDirection.FORWARD;
+        RevHubOrientationOnRobot.UsbFacingDirection.BACKWARD;
     public static final String TEAM_FOLDER_PATH                 =
         Environment.getExternalStorageDirectory().getPath() + "/FIRST/ftcxxxx";
     public static final String LOG_FOLDER_PATH                  = TEAM_FOLDER_PATH + "/tracelogs";
@@ -89,10 +90,10 @@ public class RobotParams
     public static final String HWNAME_WEBCAM2                   = "Webcam 2";
     public static final String HWNAME_BLINKIN                   = "blinkin";
     // Drive Base.
-    public static final String HWNAME_LFDRIVE_MOTOR             = "lfDriveMotor";
-    public static final String HWNAME_RFDRIVE_MOTOR             = "rfDriveMotor";
-    public static final String HWNAME_LBDRIVE_MOTOR             = "lbDriveMotor";
-    public static final String HWNAME_RBDRIVE_MOTOR             = "rbDriveMotor";
+    public static final String HWNAME_LFDRIVE_MOTOR             = "lf_drive";
+    public static final String HWNAME_RFDRIVE_MOTOR             = "rf_drive";
+    public static final String HWNAME_LBDRIVE_MOTOR             = "lb_drive";
+    public static final String HWNAME_RBDRIVE_MOTOR             = "rb_drive";
     public static final String HWNAME_LFSTEER_SERVO             = "lfSteerServo";
     public static final String HWNAME_RFSTEER_SERVO             = "rfSteerServo";
     public static final String HWNAME_LBSTEER_SERVO             = "lbSteerServo";
